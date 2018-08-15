@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Text, View, SafeAreaView } from 'react-native';
 
 import ApolloClient from 'apollo-client';
@@ -9,7 +9,7 @@ import gql from 'graphql-tag';
 // import { clinet } from 'src/client.js';
 
 // Main App export
-export default class ApolloApp extends React.Component {
+export default class ApolloApp extends Component {
   render() {
     return(
       <ApolloProvider client={client}>
