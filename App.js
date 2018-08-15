@@ -13,9 +13,9 @@ export default class ApolloApp extends Component {
   render() {
     return(
       <ApolloProvider client={client}>
-      <SafeAreaView>
-      <UserDetails />
-      </SafeAreaView>
+        <SafeAreaView>
+          <UserDetails />
+        </SafeAreaView>
       </ApolloProvider>
       );
   }
@@ -47,7 +47,7 @@ const UserDetails = graphql(USER_GET)(({ data }) => {
     <View style={{ padding: 10 }}>
     {users.map(({ name, phone }) => (
       <Text key={name}>
-      {name}: {phone} 
+      {name}: {phone}
       {'\n'}
       </Text>
       ))}
